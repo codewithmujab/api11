@@ -7,3 +7,8 @@ STEP
 
 php artisan make:model Task -mc = model, migration, controller
 php artisan make:model Task -a = semua fitur di artisan
+
+
+referensi
+=========
+https://divisidev.com/post/request-validation-laravel-rest-api

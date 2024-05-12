@@ -24,7 +24,7 @@ class ProductController extends Controller
     public function index()
     {
         $data = $this->productRepositoryInterface->index();
-        return ResponseClass::sendResponse(ProductResource::collection($data), '', 200);
+        return ResponseClass::sendResponse(ProductResource::collection($data), 'Data Product List', 200);
     }
 
     /**
@@ -62,7 +62,7 @@ class ProductController extends Controller
     {
         $product = $this->productRepositoryInterface->getById($id);
 
-        return ResponseClass::sendResponse(new ProductResource($product), '', 200);
+        return ResponseClass::sendResponse(new ProductResource($product), 'Detail Data by ID', 200);
     }
 
     /**
