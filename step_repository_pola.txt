@@ -1,0 +1,9 @@
+STEP
+1. Create a Repository Interface = Antarmuka ini mendefinisikan metode yang akan digunakan untuk melakukan operasi CRUD pada model Pengguna
+2. Create a Repository Class = Kelas ini akan berinteraksi dengan mekanisme penyimpanan data untuk melakukan operasi CRUD
+3. Create a Service Class = Terakhir, kita perlu membuat kelas Service yang menggunakan kelas Repositori untuk melakukan operasi logika bisnis. Misalnya, mari kita buat UserService
+4. Use the Service Class in the Controller = Terakhir, kita dapat menggunakan UserService di Controller untuk melakukan operasi logika bisnis.
+
+
+php artisan make:model Task -mc = model, migration, controller
+php artisan make:model Task -a = semua fitur di artisan
